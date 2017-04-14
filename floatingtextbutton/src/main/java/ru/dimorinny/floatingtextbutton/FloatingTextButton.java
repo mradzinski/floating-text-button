@@ -26,6 +26,12 @@ public class FloatingTextButton extends FrameLayout {
     private int titleColor;
     private Drawable icon;
     private int background;
+    
+    public FloatingTextButton(Context context) {
+        super(context);
+        inflateLayout(context);
+        initView();
+    }
 
     public FloatingTextButton(Context context, AttributeSet attrs) {
         super(context, attrs);
